@@ -81,9 +81,9 @@ function showDetails(p_num, btn) {
 
       return;
     } else if (btn.innerHTML === "Hide Details") {
-      document.getElementById(`p${p_id}-name`).textContent = "";
-      document.getElementById(`p${p_id}-discrip`).textContent = "";
-      document.getElementById(`p${p_id}-price`).textContent = "";
+      document.getElementById(`p${p_num}-name`).textContent = "";
+      document.getElementById(`p${p_num}-discrip`).textContent = "";
+      document.getElementById(`p${p_num}-price`).textContent = "";
       btn.innerHTML = "Show Details";
 
       btn.style.color = "#ffffff80";
