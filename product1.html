@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+    <!-- bootstrab -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- start nav -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark py-0">
+        <a class="navbar-brand logo mr-5" href="index.html"><span>D</span>shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
+                <i class="fas fa-search mt-3 mt-md-0"></i>
+            </form>
+        </div>
+    </nav> <!-- end nav -->
+
+
+
+    <div class="container-fluid container-md">
+        <!-- start product details  -->
+        <section class="product-details row my-5 justify-content-between ">
+
+            <div class="product-images col-12 col-sm-5 my-5">
+                <div class="big-image">
+                    <img id="current" src="img/product1.jpg" alt="">
+                </div>
+                <div class="small-images mt-2 ">
+                    <div class="sm-image">
+                        <img src="img/product1back.jpg" alt="" onclick="changeCurrent(this)">
+                    </div>
+                    <div class="sm-image mx-2">
+                        <img src="img/product1-2.jpg" alt="" onclick="changeCurrent(this)">
+                    </div>
+                    <div class="sm-image">
+                        <img src="img/product1-3.jpg" alt="" onclick="changeCurrent(this)">
+                    </div>
+                </div>
+
+            </div>
+            <div class="details col-12 col-sm-6 my-5">
+                <h4 id="p1-name" class="prod-name">Dress</h4>
+                <p id="p1-price" class="price">580 EGP</p>
+                <p id="p1-discrip" class="prod-descrip" style="margin-bottom: 0;">Showcasing eye-catching floral print
+                    against a bright background,
+                    this tiered dress with elbow sleeves will soon become your</p> <span id="dots"></span>
+                <div id="see-more" style="display: inline-block;"> favourite. Made by using quality fabric, this dress
+                    has a good finish and is high on comfort too. The wrap style design and the tie-ups elevate the
+                    appeal of this dress.
+                    <ul class="ml-4">
+                        <li>Style : Tiered</li>
+                        <li>Sleeve Length : Elbow Sleeves</li>
+                        <li>Design : Floral</li>
+                        <li>Length : Maxi</li>
+                        <li>Occasion : Casual</li>
+                        <li>Model Wears : 10</li>
+                        <li>Model Stats : Bust 81 cms, Waist 61 cms, Hips 89 cms, Height 172 cms</li>
+                        <li>Model Stats : Bust 81 cms, Waist 61 cms, Hips 89 cms, Height 172 cms</li>
+                    </ul>
+                </div>
+                <button id="see-more-btn" onclick="hide_showText(this)">See less</button>
+                <h5 class="mt-5">Sizes Avalible :</h5>
+                <ul class="sizes" id="sizes">
+                    <li onclick="chooseSize(this)">XS</li>
+                    <li onclick="chooseSize(this)">S</li>
+                    <li onclick="chooseSize(this)">M</li>
+                    <li onclick="chooseSize(this)">L</li>
+                    <li onclick="chooseSize(this)">XL</li>
+                    <li onclick="chooseSize(this)">XXL</li>
+
+
+                </ul>
+                <button class="btn mt-3"> Add to Cart</button>
+            </div>
+
+        </section> <!-- end product details  -->
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

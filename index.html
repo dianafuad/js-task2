@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+    <!-- bootstrab -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+           <!-- start nav -->
+  
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark py-0">
+            <a class="navbar-brand logo mr-5" href="#"><span>D</span>shop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
+                    <i class="fas fa-search mt-3 mt-md-0"></i>
+                </form>
+            </div>
+        </nav> <!-- end nav --> 
+       
+    <div class="container-fluid">
+        <div class="products-container ">
+            <div class="product ">
+                <div class="image ">
+                <a href="product1.html">    <img src="img/product1.jpg" alt="" onmouseenter="changePic(this)" onmouseout="picBack(this)"></a>
+                </div>
+                <h4 id="p1-name" class="prod-name"></h4>
+                <p id="p1-discrip" class="prod-descrip"></p>
+                <p id="p1-price" class="price"></p>
+                <button onclick="showDetails(1,this)" class="btn" id="p1-show">Show Details</button>
+            </div>
+            <div class="product ">
+                <div class="image">
+                    <img src="img/product2.jpg" alt="" onmouseenter="changePic(this)" onmouseout="picBack(this)">
+                </div>
+                <h4 id="p2-name" class="prod-name"></h4>
+                <p id="p2-discrip" class="prod-descrip"></p>
+                <p id="p2-price" class="price"></p>
+                <button onclick="showDetails(2,this)" class="btn">Show Details</button>
+
+            </div>
+
+            <div class="product">
+                <div class="image">
+                    <img src="img/product3.jpg" alt="" onmouseenter="changePic(this)" onmouseout="picBack(this)">
+                </div>
+                <h4 id="p3-name" class="prod-name"></h4>
+                <p id="p3-discrip" class="prod-descrip"></p>
+                <p id="p3-price" class="price"></p>
+                <button onclick="showDetails(3,this)" class="btn" id="p1-show">Show Details</button>
+
+            </div>
+
+            <div class="product">
+                <div class="image">
+                    <img src="img/product4.jpg" alt="" onmouseenter="changePic(this)" onmouseout="picBack(this)">
+                </div>
+                <h4 id="p4-name" class="prod-name"></h4>
+                <p id="p4-discrip" class="prod-descrip"></p>
+                <p id="p4-price" class="price"></p>
+                <button onclick="showDetails(4,this)" class="btn" id="p1-show">Show Details</button>
+
+
+            </div>
+      
+
+            <div class="product ">
+                <div class="image">
+                    <img src="img/product5.jpg" alt="" onmouseenter="changePic(this)" onmouseout="picBack(this)">
+                </div>
+                <h4 id="p5-name" class="prod-name"></h4>
+                <p id="p5-discrip" class="prod-descrip"></p>
+                <p id="p5-price" class="price"></p>
+                <button onclick="showDetails(5,this)" class="btn" id="p1-show">Show Details</button>
+
+            </div>
+            <div class="product ">
+                <div class="image">
+                    <img src="img/product6.jpg" alt="" onmouseenter="changePic(this)" onmouseout="picBack(this)">
+                </div>
+                <h4 id="p6-name" class="prod-name"></h4>
+                <p id="p6-discrip" class="prod-descrip"></p>
+                <p id="p6-price" class="price"></p>
+                <button onclick="showDetails(6,this)" class="btn" id="p1-show">Show Details</button>
+            </div>
+
+
+            <div class="product">
+                <div class="image ">
+                    <img src="img/product7.jpg" alt="" onmouseenter="changePic(this)" onmouseout="picBack(this)">
+                </div>
+                <h4 id="p7-name" class="prod-name"></h4>
+                <p id="p7-discrip" class="prod-descrip"></p>
+                <p id="p7-price" class="price"></p>
+                <button onclick="showDetails(7,this)" class="btn" id="p1-show">Show Details</button>
+
+            </div>
+            <div class="product ">
+                <div class="image">
+                    <img src="img/product8.jpg" alt="" onmouseenter="changePic(this)" onmouseout="picBack(this)">
+                </div>
+                <h4 id="p8-name" class="prod-name"></h4>
+                <p id="p8-discrip" class="prod-descrip"></p>
+                <p id="p8-price" class="price"></p>
+                <button onclick="showDetails(8,this)" class="btn" id="p1-show">Show Details</button>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
