@@ -152,6 +152,7 @@ li {
 
 .sm-image {
     flex-basis: 33%;
+    cursor: pointer;
 
 }
 
