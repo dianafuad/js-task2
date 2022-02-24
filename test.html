@@ -10,7 +10,7 @@
     </style>
 </head>
 <body>
-    <ul id="menu">
+    <!-- <ul id="menu">
         <li class="first"><a href="#">ttt</a> <p>iiiiiiiii</p></li>
         <li>Products</li>
         <li class="current">Customer Support</li>
@@ -25,7 +25,36 @@ let firstChild = content.children;
 for (const i of firstChild) {
     console.log(i.textContent);
 }
-console.log(firstChild);
+console.log(firstChild); -->
+ <ul class="menu">
+        <li class="first"><a href="#">ttt</a> <p>iiiiiiiii</p></li>
+        <li>Products</li>
+        <li class="current">Customer Support</li>
+        <li>Careers</li>
+        <li>Investors</li>
+        <li>News</li>
+        <li class="last">About Us</li>
+      </ul>
+      <ul class="menu" style="margin-top: 20px;">
+        <li class="first"><a href="#">ttt</a> <p>iiiiiiiii</p></li>
+        <li>Products</li>
+        <li class="current">Customer Support</li>
+        <li>Careers</li>
+        <li>Investors</li>
+        <li>News</li>s
+        <li class="last">About Us</li>
+      </ul>
+      <script>
+          const nodeList = document.querySelectorAll(".menu");
+          for (let i = 0; i < nodeList.length; i++) {
+  console.log( nodeList[i].children[0].textContent);
+}
+//           let content = document.getElementById('menu');
+// let firstChild = content.children;
+// for (const i of firstChild) {
+//     console.log(i.textContent);
+// // }
+// console.log(firstChild); 
       </script>
 </body>
 
