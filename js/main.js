@@ -27,7 +27,7 @@ let product2 = {
   desc: "Colour Block Jog Pants with Pockets and Drawstring Closure",
   price: 300,
   id: 2,
-  
+
   overview:
     "Flaunting a colour block pattern, this pair of jog pants makes for a worthy grab if you're a trendy person.",
   seeMore:
@@ -39,8 +39,7 @@ let product2 = {
     item4: "Length : Full Length",
     item5: "Occasion : Athleisure",
     item6: "Model Wears : S",
-    item7:
-      "Model Stats : Bust 84 cms, Waist 64 cms, Hips 90 cms,",
+    item7: "Model Stats : Bust 84 cms, Waist 64 cms, Hips 90 cms,",
   },
   imgSrc1: "img/product2.jpg",
   imgSrc2: "img/product2-1.jpg",
@@ -230,27 +229,33 @@ function openProductPage(p_num) {
   newWin.onload = function () {
     for (let index = 0; index < 2; index++) {
       if (p_num === products_opjs[index].id) {
-   
- 
-        newWin.document.getElementById("p1-name").innerHTML=products_opjs[index].name;
-        newWin.document.getElementById("p1-price").innerHTML=products_opjs[index].price+=" EGP";
-        newWin.document.getElementById("p1-overview").innerHTML=products_opjs[index].overview;
-        newWin.document.getElementById("see-more").innerHTML=products_opjs[index].seeMore;
-       
-        var ul = newWin.document. getElementById("des-list");        
-        let arr_detailes=Object.values(products_opjs[index].desList);
+        newWin.document.getElementById("p1-name").innerHTML =
+          products_opjs[index].name;
+        newWin.document.getElementById("p1-price").innerHTML = products_opjs[
+          index
+        ].price += " EGP";
+        newWin.document.getElementById("p1-overview").innerHTML =
+          products_opjs[index].overview;
+        newWin.document.getElementById("see-more").innerHTML =
+          products_opjs[index].seeMore;
+
+        var ul = newWin.document.getElementById("des-list");
+        let arr_detailes = Object.values(products_opjs[index].desList);
         for (const i of arr_detailes) {
-          var li = newWin.document. createElement("li");
-    
-            li. appendChild(newWin.document. createTextNode(i));
-            ul. appendChild(li);
+          var li = newWin.document.createElement("li");
+
+          li.appendChild(newWin.document.createTextNode(i));
+          ul.appendChild(li);
         }
-        
-        newWin.document.getElementById("current").src=products_opjs[index]. imgSrc1;
-        newWin.document.getElementById("img1").src=products_opjs[index]. imgSrc2;
-        newWin.document.getElementById("img2").src=products_opjs[index]. imgSrc3;
-        newWin.document.getElementById("img3").src=products_opjs[index]. imgSrc4;
-       
+
+        newWin.document.getElementById("current").src =
+          products_opjs[index].imgSrc1;
+        newWin.document.getElementById("img1").src =
+          products_opjs[index].imgSrc2;
+        newWin.document.getElementById("img2").src =
+          products_opjs[index].imgSrc3;
+        newWin.document.getElementById("img3").src =
+          products_opjs[index].imgSrc4;
       }
     }
   };
